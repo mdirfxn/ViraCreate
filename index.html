@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +11,7 @@
       background-color: #f4f4f4;
       color: #222;
       text-align: center;
-      padding: 40px;
+      padding: 40px 20px;
     }
     .logo {
       font-size: 72px;
@@ -23,14 +22,19 @@
       margin-top: 20px;
       font-size: 36px;
     }
+    h2 {
+      font-size: 28px;
+      margin-top: 40px;
+      color: #007C8A;
+    }
     p {
       font-size: 18px;
       margin: 20px auto;
-      max-width: 600px;
+      max-width: 700px;
     }
-    a {
+    .cta-button {
       display: inline-block;
-      margin-top: 20px;
+      margin: 20px auto;
       text-decoration: none;
       color: white;
       background-color: #007C8A;
@@ -38,12 +42,72 @@
       border-radius: 6px;
       font-weight: bold;
     }
+    form {
+      margin-top: 30px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #007C8A;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #777;
+    }
   </style>
 </head>
 <body>
   <div class="logo">VC</div>
-  <h1>Welcome to ViraCreate Media</h1>
-  <p>We help businesses grow through high-retention TikToks, Reels, UGC, and expert video editing. Looking to grow your brand’s reach? Let’s talk.</p>
-  <a href="mailto:contact@viracreate.com">Contact Us</a>
+  <h1>Free Digital Marketing for Businesses</h1>
+  <p>We help businesses grow through high-retention TikToks, Reels, UGC, and expert video editing. We’re currently offering 100% free marketing services to build our portfolio—no risk, just results.</p>
+  <a class="cta-button" href="#contact">Claim Your Free Strategy</a>
+
+  <h2>Why Work With Us?</h2>
+  <p>
+    🚀 100% Free Services — No hidden costs<br>
+    🧠 Proven strategies to get more leads<br>
+    💼 Perfect for local businesses & eCommerce<br>
+    🎯 You gain results while we build our portfolio
+  </p>
+
+  <h2>How It Works</h2>
+  <p>
+    1. Fill the form below<br>
+    2. We reach out within 24 hours<br>
+    3. We plan, launch, and run your campaign — totally free
+  </p>
+
+  <h2 id="contact">Get Started</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="business" placeholder="Business Name" />
+    <textarea name="message" placeholder="Tell us what you need help with..." rows="5"></textarea>
+    <button type="submit">Claim Free Campaign</button>
+  </form>
+
+  <footer>
+    Prefer email? <a href="mailto:contact@viracreate.com">contact@viracreate.com</a><br>
+    &copy; 2025 ViraCreate Media. All rights reserved.
+  </footer>
 </body>
 </html>
+
